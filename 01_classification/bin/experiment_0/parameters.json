@@ -8,7 +8,7 @@
 
     "network_architecture" :
     {
-        "network_log_file_name" : "tic_tac/network.log",
+        "network_log_file_name" : "experiment_0/network.log",
 
         "input_geometry"     : [7, 7, 1],
         "output_geometry"    : [1, 1, 2],
@@ -28,32 +28,16 @@
         [
 
           {
-            "type"      : "dense convolution",
-            "geometry"  : [3, 3, 8]
+            "type"      : "fc",
+            "geometry"  : [1, 1, 100]
           },
           {
             "type"      : "relu"
           },
 
           {
-            "type"      : "dense convolution",
-            "geometry"  : [3, 3, 8]
-          },
-          {
-            "type"      : "relu"
-          },
-
-          {
-            "type"      : "dense convolution",
-            "geometry"  : [3, 3, 8]
-          },
-          {
-            "type"      : "relu"
-          },
-
-          {
-            "type"      : "dense convolution",
-            "geometry"  : [3, 3, 8]
+            "type"      : "fc",
+            "geometry"  : [1, 1, 50]
           },
           {
             "type"      : "relu"
@@ -66,6 +50,7 @@
           {
             "type"      : "output"
           }
+
 
         ]
     }
