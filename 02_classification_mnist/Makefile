@@ -1,6 +1,8 @@
 ELF = bin/classification.elf
 
-LIBS_PATH=$(HOME)/rysy
+#LIBS_PATH=$(HOME)/libs/rysy
+#DQN_LIBS_PATH=$(HOME)/libs/deep_q_network
+
 
 INC+= -I.
 INC+= -I$(LIBS_PATH)/libs_common

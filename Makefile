@@ -1,3 +1,8 @@
+LIBS_PATH=$(HOME)/libs/rysy
+DQN_LIBS_PATH=$(HOME)/libs/deep_q_network
+
+export LIBS_PATH
+export DQN_LIBS_PATH
 
 all:
 	cd 01_classification && make -j4
